@@ -11,15 +11,28 @@ body {
 header {
     text-align: center;
     margin: 3rem 0;
+    max-width: 80rem;
 }
 
-main {
-    display: flex;
-    align-items: center;
+section {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+form{
+    width: 100%;
+}
+
+section form{
+    text-align: center;
 }
 
 .icon {
-    width: 10rem;
+    width: 8rem;
     height: auto;
 }
 
