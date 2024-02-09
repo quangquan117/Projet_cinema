@@ -8,9 +8,28 @@ body {
     font-family: 'Grape Nuts', cursive;
 }
 
+nav {
+    padding: 1rem 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a{
+    color: var(--color-nav);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
 header {
     text-align: center;
     margin: 3rem 0;
+}
+
+header h1 {
+    font-size: 5rem;
 }
 
 main {
@@ -45,10 +64,17 @@ form input.glow-on-hover{
     border: 0.2rem solid var(--color-font);
     font-size: 2rem;
     font-family: 'Grape Nuts', cursive;
+    color: #fff;
 }
 
 section form{
     text-align: center;
+}
+
+section p{
+    text-align: center;
+    margin: 3rem 0;
+    font-size: 2.5rem;
 }
 
 .icon {
@@ -63,4 +89,8 @@ li{
 footer {
     text-align: center;
     margin: 3rem 0;
+}
+
+footer p {
+    font-size: 2.8rem;
 }
