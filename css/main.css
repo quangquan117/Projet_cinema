@@ -11,10 +11,10 @@ body {
 header {
     text-align: center;
     margin: 3rem 0;
-    max-width: 80rem;
 }
 
-section {
+main {
+    max-width: 80rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -24,7 +24,20 @@ h2 {
 }
 
 form{
+    padding: 5rem;
     width: 100%;
+}
+
+form input.email{
+    width: 75%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0);
+    border: 0.2rem solid var(--color-border);
+}
+
+form input.glow-on-hover{
+    width: 24%;
+    padding: 1rem;
 }
 
 section form{
@@ -38,4 +51,9 @@ section form{
 
 li{
     display: inline-block;
+}
+
+footer {
+    text-align: center;
+    margin: 3rem 0;
 }
