@@ -54,7 +54,7 @@ form input.email{
     border: 0.2rem solid var(--color-border);
     font-family: 'Grape Nuts', cursive;
     color: var(--color-font-secondary);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 form input.glow-on-hover{
@@ -62,7 +62,7 @@ form input.glow-on-hover{
     padding: 1rem;
     background-color: var(--color-font);
     border: 0.2rem solid var(--color-font);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Grape Nuts', cursive;
     color: #fff;
 }
