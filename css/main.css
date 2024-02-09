@@ -24,7 +24,7 @@ h2 {
 }
 
 form{
-    padding: 5rem;
+    margin: 5rem 0;
     width: 100%;
 }
 
@@ -33,11 +33,18 @@ form input.email{
     padding: 1rem;
     background-color: rgba(0,0,0,0);
     border: 0.2rem solid var(--color-border);
+    font-family: 'Grape Nuts', cursive;
+    color: var(--color-font-secondary);
+    font-size: 2rem;
 }
 
 form input.glow-on-hover{
     width: 24%;
     padding: 1rem;
+    background-color: var(--color-font);
+    border: 0.2rem solid var(--color-font);
+    font-size: 2rem;
+    font-family: 'Grape Nuts', cursive;
 }
 
 section form{
