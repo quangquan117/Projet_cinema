@@ -70,6 +70,15 @@ form input.glow-on-hover{
     font-family: 'Grape Nuts', cursive;
     color: #fff;
 }
+form select{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0,0,0,0);
+    border: 0.2rem solid var(--color-border);
+    font-family: 'Grape Nuts', cursive;
+    color: var(--color-font-secondary);
+    font-size: 2.5rem;
+}
 
 section form{
     text-align: center;
@@ -82,7 +91,7 @@ section p{
 }
 
 .icon {
-    width: 8rem;
+    width: 20rem;
     height: auto;
 }
 
