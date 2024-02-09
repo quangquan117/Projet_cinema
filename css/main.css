@@ -47,14 +47,18 @@ form{
     width: 100%;
 }
 
-form input.email{
-    width: 75%;
+form input{
+    width: 100%;
     padding: 1rem;
     background-color: rgba(0,0,0,0);
     border: 0.2rem solid var(--color-border);
     font-family: 'Grape Nuts', cursive;
     color: var(--color-font-secondary);
     font-size: 2.5rem;
+}
+
+form input.email_acceuille{
+    width: 75%;
 }
 
 form input.glow-on-hover{
@@ -93,4 +97,13 @@ footer {
 
 footer p {
     font-size: 2.8rem;
+}
+
+@media screen and (max-width: 80rem) {
+    form input.email_acceuille{
+        width: 100%;
+    }
+    form input.glow-on-hover{
+        width: 100%;
+    }
 }
