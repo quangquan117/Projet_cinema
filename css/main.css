@@ -61,6 +61,16 @@ form input{
     font-size: 2.5rem;
 }
 
+form a {
+    width: 24%;
+    padding: 1rem;
+    background-color: var(--color-font);
+    border: 0.2rem solid var(--color-font);
+    font-size: 2.5rem;
+    font-family: 'Grape Nuts', cursive;
+    color: #fff;
+}
+
 form input.email_acceuille {
     width: 75%;
 }
