@@ -55,7 +55,6 @@ form label{
 form input{
     width: 100%;
     padding: 1rem;
-    background-color: rgba(0,0,0,0);
     border: 0.2rem solid var(--color-border);
     font-family: 'Grape Nuts', cursive;
     color: var(--color-font-secondary);
@@ -102,7 +101,6 @@ form input.valider {
 form select {
     width: 100%;
     padding: 1rem;
-    background-color: rgba(0,0,0,0);
     border: 0.2rem solid var(--color-border);
     font-family: 'Grape Nuts', cursive;
     color: var(--color-font-secondary);
@@ -146,6 +144,11 @@ section.location ul{
 section.location ul li ul{
     display: grid;
     grid-template-columns: repeat(1, 3fr);
+}
+
+section.nos_film ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 section.location ul li ul li{
