@@ -33,7 +33,7 @@ header h1 {
 }
 
 main {
-    max-width: 80rem;
+    max-width: 100rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -130,6 +130,10 @@ form input.valider {
     color: #fff;
 }
 
+section.intro {
+    margin-bottom: 1rem;
+}
+
 section.take_your_place{
     display: block;
     border: 0.2rem solid var(--color-border);
@@ -138,27 +142,26 @@ section.take_your_place{
 section ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-
-section.intro ul li:last-child{
-    padding: 1rem;
-    text-align: center;
-    font-size: 2.5rem;
+    gap: 1rem;
+    align-items: center; /*Centré les items*/
 }
 
 section.location ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 section.location ul li ul{
     display: grid;
     grid-template-columns: repeat(1, 3fr);
+    gap: 1rem;
 }
 
 section.nos_film ul{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
 section.location ul li ul li{
