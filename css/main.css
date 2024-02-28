@@ -68,7 +68,7 @@ form a {
     border: 0.2rem solid var(--color-font);
     font-size: 2.5rem;
     font-family: 'Grape Nuts', cursive;
-    color: #fff;
+    color: var(--color-font-button);
 }
 
 form input.email_acceuille {
@@ -82,7 +82,7 @@ form input.glow-on-hover {
     border: 0.2rem solid var(--color-font);
     font-size: 2.5rem;
     font-family: 'Grape Nuts', cursive;
-    color: #fff;
+    color: var(--color-font-button);
 }
 
 button {
@@ -92,7 +92,7 @@ button {
     border: 0.2rem solid var(--color-font);
     font-size: 2.5rem;
     font-family: 'Grape Nuts', cursive;
-    color: #fff;
+    color: var(--color-font-button);
 
 }
 
@@ -105,7 +105,7 @@ form input.valider {
     border: 0.2rem solid var(--color-font);
     font-size: 2.5rem;
     font-family: 'Grape Nuts', cursive;
-    color: #fff;
+    color: var(--color-font-button);
 }
 
 form select {
@@ -127,7 +127,7 @@ form input.valider {
     border: 0.2rem solid var(--color-font);
     font-size: 2.5rem;
     font-family: 'Grape Nuts', cursive;
-    color: #fff;
+    color: var(--color-font-button);
 }
 
 section.intro {
@@ -199,6 +199,69 @@ footer {
 footer p {
     font-size: 2.8rem;
 }
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 6rem;
+    height: 3.4rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 2.6rem;
+    width: 2.6rem;
+    left: 0.4rem;
+    bottom: 0.4rem;
+    background-color: var(--color-nav);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--color-font-secondary);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 0.1rem var(--color-font-secondary);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(2.6rem);
+    -ms-transform: translateX(2.6rem);
+    transform: translateX(2.6rem);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 3.4rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 @media screen and (max-width: 80rem) {
     form input.email_acceuille{
