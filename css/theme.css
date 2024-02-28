@@ -1,3 +1,12 @@
+:root {
+    --color-primary: #001B2E;
+    --color-font: #C14633;
+    --color-font-secondary: #EC3609;
+    --color-nav: #95A092;
+    --color-border: #6D783F;
+    --color-font-button: #F4F4F4;
+}
+
 .theme-dark {
     --color-primary: #001B2E;
     --color-font: #C14633;

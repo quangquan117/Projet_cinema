@@ -3,17 +3,21 @@ export class Theme {
     themeName;
 
     constructor() {
-        this.themeName = 'theme-dark';
-        document.documentElement.className = 'theme-dark';
+        this.themeName = localStorage.getItem('theme') || 'theme-dark';
+        document.documentElement.className = this.themeName;
+    }
+
+    setTheme(theme) {
+        this.themeName = theme;
+        localStorage.setItem('theme', theme);
+        document.documentElement.className = theme;
     }
 
     changeTheme(button) {
         if (this.themeName === 'theme-dark') {
-            this.themeName = 'theme-light';
-            document.documentElement.className = 'theme-light';
+            this.setTheme('theme-light');
         } else {
-            this.themeName = 'theme-dark';
-            document.documentElement.className = 'theme-dark';
+            this.setTheme('theme-dark');
         }
     }
 }
