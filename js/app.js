@@ -1,4 +1,4 @@
-import { changeTheme } from "./theme.js";
+import { Theme } from "./theme.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("loadContent");
@@ -13,8 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
     //     <input type="checkbox">
     //     <span class="slider round"></span>
     // </label>
+
+    let theme = new Theme();
     let switchButton = document.querySelector(".switch input");
     switchButton.addEventListener("click", () => {
-        changeTheme(switchButton);
+        theme.changeTheme(switchButton);
     });
 });

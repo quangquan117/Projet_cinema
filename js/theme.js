@@ -1,12 +1,19 @@
-function setTheme(themeName) {
-  localStorage.setItem('theme', themeName);
-  document.documentElement.className = themeName;
-}
+export class Theme {
 
-export function changeTheme(button) {
-  if (localStorage.getItem('theme') === 'theme-dark') {
-    setTheme('theme-light');
-  } else {
-    setTheme('theme-dark');
-  }
+    themeName;
+
+    constructor() {
+        this.themeName = 'theme-dark';
+        document.documentElement.className = 'theme-dark';
+    }
+
+    changeTheme(button) {
+        if (this.themeName === 'theme-dark') {
+            this.themeName = 'theme-light';
+            document.documentElement.className = 'theme-light';
+        } else {
+            this.themeName = 'theme-dark';
+            document.documentElement.className = 'theme-dark';
+        }
+    }
 }
