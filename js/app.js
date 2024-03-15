@@ -3,15 +3,17 @@ import { f_button } from "./button.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("loadContent");
-    localStorage.clear();
+
     // TODO: faire une liste d'images de films
 
     // TODO: Form index
-    let btn = document.querySelector(".glow-on-hover");
-    btn.addEventListener("click", e => {
-        e.preventDefault();
-        f_button();
-    });
+    if (window.location.href == "http://localhost/Projet_cinema/index.php") {
+        let btn = document.querySelector(".glow-on-hover");
+        btn.addEventListener("click", e => {
+            e.preventDefault();
+            f_button();
+        });
+    }
 
     // TODO: faire fonctionner le formulaire d'inscription
 

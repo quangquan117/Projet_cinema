@@ -18,9 +18,9 @@
     <nav>
         <ul>
             <li><a href="./index.php">Accueil</a></li>
-            <li><a href="./nos_film.html">Nos films</a></li>
+            <li><a href="./nos_film.php">Nos films</a></li>
             <li><a href="./inscription.php">S'inscrire</a></li>
-            <li><a href="./conection.html">Se connecter</a></li>
+            <li><a href="./login.php">Se connecter</a></li>
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>

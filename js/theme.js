@@ -3,7 +3,7 @@ export class Theme {
     themeName;
 
     constructor() {
-        this.themeName = localStorage.getItem('theme') || 'theme-dark';
+        this.themeName = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'theme-dark';
         document.documentElement.className = this.themeName;
     }
 
@@ -19,5 +19,6 @@ export class Theme {
         } else {
             this.setTheme('theme-dark');
         }
+        console.log('theme', this.themeName);
     }
 }

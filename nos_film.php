@@ -1,5 +1,5 @@
 <?php
-    require_once './php/head.php';
+    require_once __DIR__ .'/php/head.php';
 ?>
     <main>
         <section class="intro">
