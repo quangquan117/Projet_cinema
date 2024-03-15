@@ -61,7 +61,7 @@ form input{
     font-size: 2.5rem;
 }
 
-form a {
+form button {
     width: 24%;
     padding: 1rem;
     background-color: var(--color-font);
@@ -206,17 +206,17 @@ footer p {
     display: inline-block;
     width: 6rem;
     height: 3.4rem;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -226,9 +226,9 @@ footer p {
     background-color: var(--color-primary);
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 2.6rem;
@@ -238,36 +238,36 @@ footer p {
     background-color: var(--color-nav);
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked + .slider {
     background-color: var(--color-font-secondary);
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus + .slider {
     box-shadow: 0 0 0.1rem var(--color-font-secondary);
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider:before {
     -webkit-transform: translateX(2.6rem);
     -ms-transform: translateX(2.6rem);
     transform: translateX(2.6rem);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 3.4rem;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}
 
-@media screen and (max-width: 80rem) {
+/* Rounded sliders */
+.slider.round {
+    border-radius: 3.4rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 100rem) {
     form input.email_acceuille{
         width: 100%;
     }
-    form input.glow-on-hover{
+    form button.glow-on-hover{
         width: 100%;
     }
 }
