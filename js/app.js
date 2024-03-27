@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // TODO: faire une liste d'images de films
 
     // TODO: Form index
-    if (window.location.href == "http://localhost/Projet_cinema/index.php") {
+    if (window.location.href == "http://localhost/projet_cinema/index.php") {
         let btn = document.querySelector(".glow-on-hover");
         btn.addEventListener("click", e => {
             e.preventDefault();

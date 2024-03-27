@@ -1,5 +1,5 @@
 <?php
-    include_once __DIR__."/model/connection.php";
+    include_once __DIR__."/../model/connection.php";
     //<form action="#" method="post">
     //     <label for="name">name</label>
     //     <input type="text" name="name" id="name" placeholder="Votre nom">

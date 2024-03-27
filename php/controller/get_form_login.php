@@ -1,5 +1,5 @@
 <?php
-    include_once __DIR__."/model/connection.php";
+    include_once __DIR__."/../model/connection.php";
     // <form action="index.php" method="post">
     //     <label for="email">login ou email</label>
     //     <input type="email" name="email" id="email" placeholder="Votre email">
