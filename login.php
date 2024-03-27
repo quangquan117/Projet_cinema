@@ -1,5 +1,6 @@
 <?php
-    require_once './php/head.php';
+    require_once __DIR__."/php/template/head.php";
+    require_once __DIR__."/php/controller/get_form_login.php";
 ?>
     <main>
         <section class="take_your_place">
@@ -8,12 +9,13 @@
                 VF et plus d’options</p>
         </section>
         <p>Votre selection pour vous</p>
-        <form action="index.php" method="post">
+        <form action="#" method="post">
             <label for="email">login ou email</label>
             <input type="email" name="email" id="email" placeholder="Votre email">
             <label for="password">mot de passe</label>
             <input type="password" name="password" id="password" placeholder="Votre mot de passe">
             <input class="valider" type="submit" value="Commencer">
+        </form>
     </main>
     <footer>
         <p>&copy;Movie-Streaming-2023</p>

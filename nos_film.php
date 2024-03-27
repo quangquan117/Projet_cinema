@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__ .'/php/head.php';
+    require_once __DIR__."/php/template/head.php";
 ?>
     <main>
         <section class="intro">

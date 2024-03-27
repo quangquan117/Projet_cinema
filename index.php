@@ -1,11 +1,11 @@
 <?php
-    require_once __DIR__ .'/php/head.php';
+    require_once __DIR__."/php/template/head.php";
 ?>
     <main>
         <section>
             <h2>Prêt à regarder?
                 saisissez votre addresse mail pour vous abonner. <br>Le Tout à 5.99 €</h2>
-            <form action="localtion.php" method="post">
+            <form action="index.php" method="post">
                 <input class="email_acceuille" type="email" name="email" id="email" placeholder="Votre email">
                 <button class="glow-on-hover" type="submit">Commencer</button>
             </form>
@@ -22,3 +22,6 @@
     <script type="module" src="./js/app.js"></script>
 </body>
 </html>
+<?php
+    session_destroy();
+?>

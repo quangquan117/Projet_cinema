@@ -12,6 +12,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <?php
+    if(isset($_SESSION['user_email'])) {
+        echo '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />';
+    }
+    ?>
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -21,6 +28,14 @@
             <li><a href="./nos_film.php">Nos films</a></li>
             <li><a href="./inscription.php">S'inscrire</a></li>
             <li><a href="./login.php">Se connecter</a></li>
+            
+            <?php
+                if(isset($_SESSION['user_email'])) {
+                    echo '<li><a href="./index.php"><span class="material-symbols-outlined">logout</span></a></li>';
+                }
+            
+            ?>
+
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
